@@ -1,10 +1,4 @@
-This tutorial is now DEPRECATED
-===============================
-
-# DEPRECATED and unmaintained, don't use this tutorial
-
-# Go to [belabox.net](https://belabox.net/) for the current installation instructions
-
+:: SAVING THIS FOR HISTORICAL REASONS ::
 
 Intro
 =====
@@ -26,6 +20,27 @@ You'll need another Internet-connected machine to serve as the ingest for your s
 Step 1
 ------
 Set up a micro SD card with L4T following the instructions from NVIDIA [for Jetson Nano 4GB](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) or [for Jetson Nano 2GB](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit). Note that you can do the initial setup either using a monitor, mouse & keyboard or in headless mode using the USB serial console. For the rest of the tutorial we'll assume that the system was set up correctly and that you have SSH access to the Jetson Nano via the Ethernet network.
+
+Step 1.5
+-------
+booting into headless mode
+
+ ```
+sudo systemctl set-default multi-user.target
+```
+
+make sure that you run the 5WATT mode if you are using the micro USB power (per default it's 10WATT Barrel Jack)
+```
+sudo nvpmodel -m 1
+```
+
+see https://desertbot.io/blog/jetson-nano-power-supply-barrel-vs-micro-usb
+
+
+(you can always switch back for desktop using
+```
+sudo systemctl set-default graphical.target
+```
 
 Step 2
 ------
