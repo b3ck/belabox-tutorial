@@ -1,13 +1,5 @@
 :: SAVING THIS FOR HISTORICAL REASONS ::
 
-Intro
-=====
-
-You should consider joining [the Discord](https://discord.gg/hS8TcpsCKu) if you want to use BELABOX. We have a lot of other relevant information there and you can also get help if you're running into problems.
-
-Check out [my Twitch channel](https://www.twitch.tv/rationalirl) for sample VODs streamed using BELABOX. If you're using BELABOX, please consider [sponsoring the ongoing development](https://github.com/sponsors/rationalsa).
-
-
 Setting up BELABOX on a Jetson Nano
 ===================================
 
@@ -159,19 +151,3 @@ Regardless of how many connections are available, BELABOX always streams via [sr
 1) Become a [github sponsor](https://github.com/sponsors/rationalsa), support the BELABOX project and receive access to our hosted srtla/SRT relay service with servers in the US and France.
 2) Follow the [srtla readme](https://github.com/BELABOX/srtla) to set up a basic relay using srt-live-transmit or another SRT server configured with the equivalent options.
 3) Use a **third party** docker image configured to receive srtla, such as [this one](https://hub.docker.com/r/sherazarde/belabox-receiver). Note that we can make no guarantees about third party packages being maintained to support future revisions of the srtla software.
-
-
-Ending notes
-------------
-
-If you're not confident following any of the instructions, please wait until we're able to distribute BELABOX in a more convenient format.
-
-Once you're set up, check out [the bitrate guide](https://github.com/BELABOX/tutorial/blob/main/bitrate_guide.md).
-
-
-This tutorial is now DEPRECATED
-===============================
-
-# DEPRECATED and unmaintained, don't use this tutorial
-
-# Go to [belabox.net](https://belabox.net/) for the current installation instructions
