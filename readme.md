@@ -133,21 +133,3 @@ See the [belacoder readme](https://github.com/BELABOX/belacoder) for information
 After setting up and confirming that everything is working correctly, you can install belaUI as a system service that starts automatically at boot by running:
 
     sudo ./install_service.sh
-
-
-Next steps
-----------
-
-For practical use, you should configure belaUI to be automatically started at boot and use a phone to control it.
-
-If you become a recurring [github sponsor](https://github.com/sponsors/rationalsa), you'll get a BELABOX cloud remote account allowing you to manage your encoder from any Internet-connected device via [cloud.belabox.net](https://cloud.belabox.net/). Otherwise you'll need a direct LAN connection to your encoder to access belaUI. Depending on your modem setup, you could make belaUI accessible either through a modem that has both USB (for the Jetson) and WiFI (for the phone) interfaces, or by enabling the hotspot feature on the phone and connecting the Jetson to it as per step 4, or by setting up a Wifi access point on the Jetson Nano - outside the scope of this tutorial.
-
-
-Receiving the stream
---------------------
-
-Regardless of how many connections are available, BELABOX always streams via [srtla](https://github.com/BELABOX/srtla). To receive this stream, you have several options, including:
-
-1) Become a [github sponsor](https://github.com/sponsors/rationalsa), support the BELABOX project and receive access to our hosted srtla/SRT relay service with servers in the US and France.
-2) Follow the [srtla readme](https://github.com/BELABOX/srtla) to set up a basic relay using srt-live-transmit or another SRT server configured with the equivalent options.
-3) Use a **third party** docker image configured to receive srtla, such as [this one](https://hub.docker.com/r/sherazarde/belabox-receiver). Note that we can make no guarantees about third party packages being maintained to support future revisions of the srtla software.
